@@ -125,7 +125,7 @@ footer {
 .parallax-section {
   width: 100vw;
   height: 500px; /* You can increase this if you want it taller */
-  background-image: url('https://github.com/soham-exe/soham-exe.github.io/blob/main/parallax.jpg?raw=true'); /* ✅ this matches your GitHub repo */
+  background-image: url('parallax.jpg'); /* ✅ this matches your GitHub repo */
   background-attachment: fixed;
   background-size: cover;
   background-position: center 30%; /* You can adjust this to show different parts */
