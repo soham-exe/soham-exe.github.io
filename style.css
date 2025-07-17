@@ -21,6 +21,10 @@ header {
 main {
   padding: 2rem;
 }
+body, main {
+  margin: 0;
+  padding: 0;
+}
 
 /* Footer Styling */
 footer {
