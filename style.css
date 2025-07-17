@@ -123,21 +123,23 @@ footer {
 }
 
 .parallax-section {
-  width: 100vw;                  /* full viewport width */
-  margin: 0;
-  padding: 0;
-  background-image: url('https://github.com/soham-exe/soham-exe.github.io/blob/main/mast.jpg');
+  background-image: url('mast.jpg');
   background-attachment: fixed;
   background-size: cover;
-  background-position: center 30%;
-  color: white;
-  height: 500px;                 /* or any height you prefer */
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 500px;
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
+
 
 .section-gap {
   height: 4rem;  /* Adjust this for more/less space */
