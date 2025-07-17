@@ -168,31 +168,21 @@ body {
 }
 
 .contact-text {
-  background-color: rgba(0, 0, 0, 0.5); /* Slightly darker for contrast */
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.8rem 1.2rem;     /* 🔽 less vertical padding */
+  border-radius: 8px;
+  max-width: 500px;
   width: 90%;
   margin: 0 auto;
 }
 
 .contact-text h2 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.3rem;          /* 🔽 smaller title */
+  margin-bottom: 0.3rem;
 }
 
 .contact-text p {
-  font-size: 1rem;
+  font-size: 0.95rem;         /* 🔽 smaller text */
   margin: 0;
-}
-
-.contact-text a {
-  color: #00ffff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-text a:hover {
-  text-decoration: underline;
 }
 
