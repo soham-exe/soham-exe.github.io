@@ -186,10 +186,10 @@ body {
   background-image: url('parallax.jpg'); /* or your image */
   background-attachment: fixed;
   background-size: cover;
-  background-position: center 90%;
+  background-position: center 100%;
   background-repeat: no-repeat;
   width: 100%;
-  height: 150px;  /* ⬅️ this is the new "strip" height */
+  height: 50px;  /* ⬅️ this is the new "strip" height */
   
   display: flex;
   align-items: center;
@@ -219,3 +219,125 @@ body {
   margin: 0;
 }
 
+
+/* --- Desktop Navbar --- */
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.nav-left {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-right a {
+  color: white;
+  font-size: 1.4rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.nav-right a:hover {
+  transform: scale(1.2);
+  color: #44fd8b;
+}
+
+/* Hamburger (hidden on PC) */
+.hamburger {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive: Show hamburger menu on small screens */
+@media (max-width: 768px) {
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 60px;
+    right: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .nav-right.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.parallax-section {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url('parallax.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center 45%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.parallax-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.parallax-text {
+  flex: 1;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.parallax-text h1 {
+  margin: 0 0 0.5rem 0;
+}
+
+.parallax-text p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.parallax-pfp {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid #44fd8b;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.parallax-pfp:hover {
+  transform: scale(1.1);
+}
