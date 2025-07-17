@@ -16,9 +16,26 @@
 
   <!-- Vanilla Tilt JS (3D hover) -->
   <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
+<nav class="desktop-nav">
+  <div class="nav-left"></div>
+  <div class="nav-right" id="navRight">
+    <a href="https://github.com/soham-exe" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://instagram.com/YOUR-INSTAGRAM" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:soham.2004@outlook.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/soham-exe" target="_blank">
+</a>
+
+  </div>
+  <div class="hamburger" onclick="toggleNav()">☰</div>
+</nav>
+
+
   <!-- AOS init -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
@@ -27,8 +44,8 @@
 
   <!-- Header Section -->
   <header data-aos="fade-down">
-    <h1>Hello, I'm Soham</h1>
-    <p>Welcome to my portfolio.</p>
+    <!-- <h1>Hello, I'm Soham</h1> -->
+    <h1>Welcome to my portfolio.</h1>
     
   </header>
 
@@ -37,8 +54,15 @@
 
   <!-- 🌌 PARALLAX SECTION -->
 <section class="parallax-section">
-  <!--<h2>Scroll for More ↓</h2>-->
+  <div class="parallax-content">
+    <div class="parallax-text">
+      <h1>Hey, I’m Soham</h1>
+      <p>Computer Engineering Student | ML Enthusiast</p>
+    </div>
+    <img src="https://github.com/soham-exe.png" alt="Profile" class="parallax-pfp" />
+  </div>
 </section>
+
 
 
   <!-- 🪄 GAP BELOW PARALLAX -->
@@ -61,6 +85,7 @@
       </div>
     </div>
   </section>
+  <div class="section-gap"></div>
       <!-- Resume Section -->
     <section id="resume" data-aos="zoom-in-up">
       <h2>My Resume</h2>
@@ -68,6 +93,7 @@
     </section>
 <div class="section-gap"></div>
     <!-- Contact Parallax Section -->
+     
     <section class="parallax-section contact-parallax">
       <div class="contact-text">
         <h2>Let's Connect</h2>
@@ -75,6 +101,13 @@
       </div>
     </section>
   </main>
+  <script>
+  function toggleNav() {
+    const nav = document.getElementById("navRight");
+    nav.classList.toggle("show");
+  }
+</script>
+
 </body>
 </html>
 
