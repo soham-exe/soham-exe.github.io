@@ -122,7 +122,7 @@ footer {
   width: 100vw;                  /* full viewport width */
   margin: 0;
   padding: 0;
-  background-image: url('https://github.com/soham-exe/soham-exe.github.io/blob/main/mast.jpg');
+  background-image: url('https://github.com/soham-exe/soham-exe.github.io/blob/main/mast.jpg?raw=true');
   background-attachment: fixed;
   background-size: cover;
   background-position: center 30%;
