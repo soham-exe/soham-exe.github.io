@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soham Sonar | Portfolio</title>
+
+  <!-- External Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS (Scroll animations) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Vanilla Tilt JS (3D hover) -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+<nav class="desktop-nav">
+  <div class="nav-left"></div>
+  <div class="nav-right" id="navRight">
+    <a href="https://github.com/soham-exe" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/soham-sonar-a98400251" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/kahihiha_soham" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:soham.2004@outlook.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/soham-exe" target="_blank">
+</a>
+
+  </div>
+  <div class="hamburger" onclick="toggleNav()">☰</div>
+</nav>
+
+
+  <!-- AOS init -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Header Section -->
+  <header data-aos="fade-down">
+    <!-- <h1>Hello, I'm Soham</h1> -->
+    <h1>Welcome to my portfolio.</h1>
+    
+  </header>
+
+  <!-- Main Content -->
+   <main>
+
+  <!-- 🌌 PARALLAX SECTION -->
+<section class="parallax-section">
+  <div class="parallax-content">
+    <div class="parallax-text">
+      <h1>Hey, I'm Soham</h1>
+      <p>Computer Engineering Student | ML Enthusiast</p>
+    </div>
+    <a href="https://github.com/soham-exe" target="_blank">
+    <img src="https://github.com/soham-exe.png" alt="Profile" class="parallax-pfp" />
+    </a>
+  </div>
+</section>
+
+
+
+  <!-- 🪄 GAP BELOW PARALLAX -->
+  <div class="section-gap"></div>
+
+  <!-- 💼 PROJECTS SECTION ------------------------------------------------------------------------------------------------------------>
+  <section id="projects" data-aos="fade-up">
+    <h2>My Projects</h2>
+<!-- Project Grid -->
+      <div class="project-grid">
+      <a href="https://github.com/soham-exe/PROJECT-1-JARVIS" target="_blank" class="project-card tilt-card" data-tilt data-tilt-speed="400">
+        <img src="images/Jarvis.jpeg" alt="Project 1">
+        <h3>Project 1: Jarvis AI</h3>
+        <p>Python-based virtual assistant that responds to voice commands.</p>
+      </a>
+<!-- Project 2 -->
+<a href="https://github.com/soham-exe/canteen_management" target="_blank" 
+   class="project-card tilt-card" data-tilt data-tilt-speed="400">
+
+    <img src="images/project2.png" alt="Project 2">
+    <h3>Project 2: Canteen Management System</h3>
+    <p>Canteen management system to place & track orders seamlessly.</p>
+</a>
+    </div>
+  </section>
+
+
+  <!-- 🪄 GAP BELOW PROJECTS ---------------------------------------------------------------------------------------------------------->
+  <div class="section-gap"></div>
+      <!-- Resume Section -->
+    <section id="resume" data-aos="zoom-in-up">
+      <h2>My Resume</h2>
+      <a class="resume-btn" href="resume.pdf" download>📄 Download Resume</a>
+    </section>
+<div class="section-gap"></div>
+    <!-- Contact Parallax Section -->
+     
+    <section class="parallax-section contact-parallax">
+      <div class="contact-text">
+        <h2>Let's Connect</h2>
+        <p>Reach out to me at <a href="mailto:soham.2004@outlook.com" style="color:#87CEEB;">soham.2004@outlook.com</a></p>
+      </div>
+    </section>
+  </main>
+  <script>
+  function toggleNav() {
+    const nav = document.getElementById("navRight");
+    nav.classList.toggle("show");
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Project 2
+      <div class="project-card tilt-card" data-tilt data-tilt-speed="400">
+        <a href="https://github.com/soham-exe/canteen_management" target="_blank"></a>
+        <img src="images/project2.png" alt="Project 2">
+        <h3>Project 2: </h3>
+        <h3>Canteen management system</h3>
+        <p>canteen management system place/track orders seamlessly.</p>
+      </div> -->
